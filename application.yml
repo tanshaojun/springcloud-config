@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: - dev
+---
+spring:
+  profiles: dev
+  application:
+    name: test-springcloud
+---
+spring:
+  profiles: test
+  application:
+    name: dev-springcloud

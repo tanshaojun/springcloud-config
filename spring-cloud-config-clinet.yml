@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 5002
+spring:
+  profiles: dev
+  application:
+    name: spring-cloud-config-clinet
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka,http://eureka7003:7003/eureka
+
+---
+server:
+  port: 5003
+spring:
+  profiles: test
+  application:
+    name: spring-cloud-config-clinet
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka,http://eureka7003:7003/eureka
+

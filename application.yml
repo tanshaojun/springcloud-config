@@ -6,9 +6,9 @@ spring:
 spring:
   profiles: dev
   application:
-    name: test-springcloud
+    name: dev-springcloud
 ---
 spring:
   profiles: test
   application:
-    name: dev-springcloud
+    name: test-springcloud

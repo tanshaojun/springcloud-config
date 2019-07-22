@@ -6,7 +6,7 @@ spring:
 spring:
   profiles: dev
   application:
-    name: consul-server
+    name: consul-server-dev
   cloud:
     consul:
       host: localhost
@@ -15,9 +15,9 @@ server:
   port: 3001
 ---
 spring:
-  profiles: dev
+  profiles: test
   application:
-    name: consul-server
+    name: consul-server-test
   cloud:
     consul:
       host: localhost
